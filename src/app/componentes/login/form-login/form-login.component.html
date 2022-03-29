@@ -1,0 +1,22 @@
+<form class="container example-form" [formGroup]="formLogin">
+    <h1>Login</h1>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input matInput placeholder="user" formControlName="user">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput placeholder="root" formControlName="password">
+    </mat-form-field>
+
+    <p>
+        <small>{{mensaje}}</small>
+    </p>
+
+    <div class="boton">
+        <button mat-raised-button color="primary" (click)="iniciarSesion()"> Iniciar Sesión</button>
+    </div>
+
+</form>

@@ -1,3 +1,7 @@
+import { userInfo } from "os";
+
 export const environment = {
-  production: true
+  production: true,
+  user: "user",
+  password: "root"
 };
