@@ -13,4 +13,7 @@ export class PlatillosService {
     return this.http.get(this.path + 'random.php');
   }
 
+  getPlatilloById(id: Number) {
+    return this.http.get(this.path + 'lookup.php?i='+ 52772);
+  }
 }

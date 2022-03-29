@@ -8,6 +8,7 @@ import { ModalWelcomeComponent } from '../shared/modal-welcome/modal-welcome.com
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  showDetails: Number = 0;
 
   constructor(public dialog: MatDialog) { }
 
@@ -18,8 +19,9 @@ export class HomeComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(ModalWelcomeComponent);
 
-    dialogRef.afterClosed().subscribe((response: boolean) => {
-      console.log(response);
+    dialogRef.afterClosed().subscribe((response: number) => {
+      this.showDetails = response;
+     
     });
   }
 }

@@ -33,6 +33,7 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatTreeModule} from '@angular/material/tree';
 import { NavbarComponent } from './componentes/shared/navbar/navbar.component';
 import { ModalWelcomeComponent } from './componentes/shared/modal-welcome/modal-welcome.component';
+import { DetallesComponent } from './componentes/shared/detalles/detalles.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ModalWelcomeComponent } from './componentes/shared/modal-welcome/modal-
     FormLoginComponent,
     FondoComponent,
     NavbarComponent,
-    ModalWelcomeComponent
+    ModalWelcomeComponent,
+    DetallesComponent
   ],
   imports: [
     BrowserModule,
