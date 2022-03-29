@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MealsInteface } from 'src/app/intefaces/meals-inteface';
 import { PlatillosService } from 'src/app/services/platillos/platillos.service';
+import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
+
 
 @Component({
   selector: 'app-detalles',
