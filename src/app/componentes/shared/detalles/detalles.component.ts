@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MealsInteface } from 'src/app/intefaces/meals-inteface';
 import { PlatillosService } from 'src/app/services/platillos/platillos.service';
-import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
 
 
 @Component({
@@ -12,7 +11,7 @@ import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-
 export class DetallesComponent implements OnInit {
   @Input() id_catalogo: Number = 0;
 
-  platillo: MealsInteface[] = [] ; 
+  platillo: MealsInteface[] = [] ;
 
   constructor(private platilloService: PlatillosService) { }
 

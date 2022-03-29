@@ -32,7 +32,6 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule} from '@angular/material/icon';
 import { MatTreeModule} from '@angular/material/tree';
 
-import { MatCarouselModule } from 'ng-mat-carousel';
 
 import { NavbarComponent } from './componentes/shared/navbar/navbar.component';
 import { ModalWelcomeComponent } from './componentes/shared/modal-welcome/modal-welcome.component';
@@ -60,9 +59,8 @@ import { DetallesComponent } from './componentes/shared/detalles/detalles.compon
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule,
-    MatCarouselModule.forRoot()
-    
+    MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
